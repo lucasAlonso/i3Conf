@@ -145,13 +145,12 @@ bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # force a window on a named workspace
-assign [class="code"] $ws1
-assign [class="google"] → $ws2
-assign [class="terminator"] $ws3
-assign [class="firefox"] → $ws4
-assign [class="caja"] $ws6
-assign [class="Discord"] $ws7
-assign [class="spotify"] $ws9
+assign [class="Code"] → $ws1
+assign [class="Google-chrome"] → $ws2
+assign [class="Terminator"] → $ws3
+assign [class="Firefox"] → $ws4
+assign [class="Caja"] → $ws6
+for_window [class="Spotify"] move to workspace $ws9
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
